@@ -4,14 +4,14 @@ import { motion } from 'framer-motion';
 const MenuItem = ({ item }) => {
   return (
     <motion.div 
-      whileHover={{ scale: 1.03 }}
-      className="bg-white rounded-lg shadow-lg overflow-hidden"
+      whileHover={{ y: -5, boxShadow: "0px 10px 20px rgba(0,0,0,0.1)" }}
+      className="bg-surface rounded-lg shadow-md overflow-hidden transition-all duration-300"
     >
-      <img src={item.image} alt={item.name} className="w-full h-48 object-cover" />
+      <img src={item.image} alt={item.name} className="w-full h-56 object-cover" />
       <div className="p-6">
-        <h3 className="text-xl font-bold mb-2">{item.name}</h3>
-        <p className="text-gray-600 mb-4">{item.description}</p>
-        <p className="text-lg font-semibold text-yellow-600">{item.price}</p>
+        <h3 className="text-2xl font-serif mb-2">{item.name}</h3>
+        <p className="text-secondary mb-4 font-sans">{item.description}</p>
+        <p className="text-xl font-bold text-accent font-sans">{item.price}</p>
       </div>
     </motion.div>
   );

@@ -1,3 +1,5 @@
+import forms from '@tailwindcss/forms';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,9 +9,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        'yellow-custom': '#f59e0b',
+        'primary': '#1a1a1a',
+        'secondary': '#4a4a4a',
+        'accent': '#c09a59',
+        'background': '#fdfaf6',
+        'surface': '#ffffff',
+      },
+      fontFamily: {
+        'sans': ['Lato', 'sans-serif'],
+        'serif': ['Playfair Display', 'serif'],
       }
     },
   },
-  plugins: [],
+  plugins: [
+    forms,
+  ],
 }

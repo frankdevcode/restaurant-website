@@ -10,9 +10,9 @@ const Reservations = () => {
       animate="in"
       exit="out"
       variants={pageVariants}
-      className="container mx-auto px-4 py-8"
+      className="container mx-auto px-6 py-16"
     >
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Hacer una Reserva</h1>
+      <h1 className="text-5xl font-serif text-center mb-12">Hacer una Reserva</h1>
       <ReservationForm />
     </motion.div>
   );

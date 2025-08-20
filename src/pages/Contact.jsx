@@ -11,10 +11,10 @@ const Contact = () => {
       animate="in"
       exit="out"
       variants={pageVariants}
-      className="container mx-auto px-4 py-8"
+      className="container mx-auto px-6 py-16"
     >
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Contacto</h1>
-      <div className="grid md:grid-cols-2 gap-8">
+      <h1 className="text-5xl font-serif text-center mb-12">Contacto</h1>
+      <div className="grid md:grid-cols-2 gap-12 items-start">
         <ContactInfo />
         <Map />
       </div>

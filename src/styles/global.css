@@ -1,15 +1,11 @@
-/* src/styles/global.css */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
 body {
-  font-family: 'Georgia', 'serif';
-  background-color: #fdfaf6;
-  color: #333;
+  @apply bg-background text-secondary font-sans;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', 'sans-serif';
-  font-weight: bold;
+  @apply font-serif text-primary;
 }
